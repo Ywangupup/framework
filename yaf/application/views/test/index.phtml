@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <?=$data1?><hr>
+    <?php if($data2['sex']=='男'):?>
+        强大
+    <?php else:?>
+        垃圾
+    <?php endif; ?>
+
+    <hr>
+    <?php foreach($data3 as $value): ?>
+        <?=$value['name']?>__<?=$value['age']?>__<?=$value['sex']?> <br/>
+    <?php endforeach;?>
+
+</body>
+</html>
